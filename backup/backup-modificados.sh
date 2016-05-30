@@ -26,7 +26,7 @@ done
 
 IFS=$SAVEIFS
 
-#Utilizando la variabe i leemos el fichero txt, utilizando for, para guardar
-#cada fichero y comprimirlo en backup.tar , por último reseteamos la variable
+#Utilizando la variable i leemos el fichero txt, utilizando for, para guardar
+#cada fichero y enviar a backup.tar , por último reseteamos la variable
 #IFS
 
