@@ -15,7 +15,7 @@ find $DIRECTORIO -type f -mtime +0  -mtime -1  > resultado.txt
 #Hemos buscando los ficheros modificados dentro de la carpeta de usuario en el 
 #último día.
 
-#A continuación leemos el fichero y generamos un ficheros comprimido con los 
+#A continuación leemos el fichero y generamos un ficheros con los 
 #ficheros modificados.
 
 tar cvf $DIRECTORIO/backup.tar resultado.txt
