@@ -32,7 +32,7 @@ echo "user=$var1" >> $HOME/.credenciales.cnf
 echo "password=$var2" >> $HOME/.credenciales.cnf
 
 #Preguntamos sobre la base de datos
-echo "¿Cuál es el nombre de la base de datos?
+echo "¿Cuál es el nombre de la base de datos?"
 #Se lee el valor
 read var3
 
