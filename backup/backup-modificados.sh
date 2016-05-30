@@ -10,7 +10,7 @@ DIRECTORIO=$(pwd)
 #Utilizamos el comando find para buscar los ficheros modificados en el último día
 #La salida se almacenará en el fichero resultado.txt
 
-find DIRECTORIO -type f -mtime +0  -mtime -1  > resultado.txt
+find $DIRECTORIO -type f -mtime +0  -mtime -1  > resultado.txt
 
 #Hemos buscando los ficheros modificados dentro de la carpeta de usuario en el 
 #último día.
@@ -18,7 +18,7 @@ find DIRECTORIO -type f -mtime +0  -mtime -1  > resultado.txt
 #A continuación leemos el fichero y generamos un ficheros comprimido con los 
 #ficheros modificados.
 
-tar cvf DIRECTORIO backup.tar resultado.txt
+tar cvf $DIRECTORIO/backup.tar resultado.txt
 
 for i in $(cat resultado.txt); do
           tar rvf /home/usuario/scripts/backup.tar "$i"
