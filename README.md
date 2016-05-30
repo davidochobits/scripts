@@ -1,2 +1,2 @@
 # scripts
-Respositorio de scripts en bash para tareas de sistemas
+Repositorio de scripts en bash para tareas de sistemas
