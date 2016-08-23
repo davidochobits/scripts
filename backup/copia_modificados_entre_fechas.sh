@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Autor: davidochobits, basado en idea original de karpoke
-# Calcula el número de día desde una fecha en el formato angosajón %Y%m%d
+# Calcula el número de día desde una fecha en el formato anglosajón %Y%m%d
 # o entre dos fechas, desde la más antigua hasta la más reciente
 # Ejemplo entre fechas 20070430 [20070530]
 
