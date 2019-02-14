@@ -15,3 +15,5 @@ then
 else
         echo "The file $RUTA does not exist" > resultado.txt
 fi
+
+mail -s "The file deletion JOB has been executed in $host " $correos < resultado.txt
