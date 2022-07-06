@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ESTADO=$(docker node ls | sed 's/\*//' | grep -v "*" |awk 'NR>1{print $4}')
-NODO=$(docker node ls | sed 's/\*//' | grep -v "*" |awk 'NR>1{print $2}')
-ESTADOYNODO=$(docker node ls | sed 's/\*//' | grep -v "*" |awk 'NR>1{print $2,$3,$4}'|tr '\n' ',')
-VALOR=$(docker node ls | sed 's/\*//' | grep -v "*" |awk 'NR>1{print $2}'|wc -l )
-ENERGIA=$(docker node ls | sed 's/\*//' | grep -v "*" |awk 'NR>1{print $3}')
+ESTADO=$(docker node ls | sed 's/\*//' |awk 'NR>1{print $4}')
+NODO=$(docker node ls | sed 's/\*//' |awk 'NR>1{print $2}')
+ESTADOYNODO=$(docker node ls | sed 's/\*//' |awk 'NR>1{print $2,$3,$4}'|tr '\n' ',')
+VALOR=$(docker node ls | sed 's/\*//' |awk 'NR>1{print $2}'|wc -l )
+ENERGIA=$(docker node ls | sed 's/\*//'|awk 'NR>1{print $3}')
 SUMA=0
 SUMA1=0
 
